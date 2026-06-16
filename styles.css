@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #0b1b3a, #050b18);
+    font-family: "Inter", sans-serif;
+}
+
+/* MAIN CARD */
+.calculator {
+    width: 380px;
+    padding: 22px;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #ffffff10, #ffffff05);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* DISPLAY */
+.display {
+    margin-bottom: 18px;
+}
+
+.brand {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 6px;
+}
+
+#screen {
+    width: 100%;
+    height: 70px;
+    font-size: 32px;
+    text-align: right;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 14px;
+    outline: none;
+    background: rgba(255,255,255,0.92);
+    color: #0b1b3a;
+    font-weight: 700;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* BUTTON GRID */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* BUTTON BASE */
+.btn {
+    height: 58px;
+    border-radius: 14px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.18s ease;
+    background: rgba(255,255,255,0.92);
+    color: #0b1b3a;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.35);
+}
+
+/* THEMATIC COLORS */
+.navy {
+    background: #0b1b3a;
+    color: white;
+}
+
+.burgundy {
+    background: #6b0f1a;
+    color: white;
+}
+
+.func {
+    background: #8b1e2d;
+    color: white;
+}
+
+/* EQUAL BUTTON (hero action) */
+.equal {
+    background: linear-gradient(135deg, #0b1b3a, #6b0f1a);
+    color: white;
+    font-size: 20px;
+}
+
+/* ZERO spans width */
+.zero {
+    grid-column: span 2;
+}
+
+/* subtle press effect */
+.btn:active {
+    transform: scale(0.96);
+}
